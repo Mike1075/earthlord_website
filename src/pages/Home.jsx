@@ -13,17 +13,17 @@ const Home = () => {
                 <h2 className="text-4xl font-bold mb-10 text-center">Game Features</h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div className="bg-slate-grey p-6 rounded-2xl border border-white/5">
-                        <img src="/images/gameplay_concept_map.png" alt="GPS Gameplay" className="w-full h-48 object-cover rounded-lg mb-4" />
+                        <img src="/images/gameplay_concept_map_1763660195356.png" alt="GPS Gameplay" className="w-full h-48 object-cover rounded-lg mb-4" />
                         <h3 className="text-2xl font-bold mb-2">Real-World Territory</h3>
                         <p className="text-gray-400">Walk to claim land. Your footsteps define your empire.</p>
                     </div>
                     <div className="bg-slate-grey p-6 rounded-2xl border border-white/5">
-                        <img src="/images/gameplay_concept_ruins.png" alt="Ruins" className="w-full h-48 object-cover rounded-lg mb-4" />
+                        <img src="/images/gameplay_concept_ruins_1763660206931.png" alt="Ruins" className="w-full h-48 object-cover rounded-lg mb-4" />
                         <h3 className="text-2xl font-bold mb-2">Scavenge Ruins</h3>
                         <p className="text-gray-400">Explore real-world POIs to find resources and loot.</p>
                     </div>
                     <div className="bg-slate-grey p-6 rounded-2xl border border-white/5">
-                        <img src="/images/gameplay_concept_base.png" alt="Base Building" className="w-full h-48 object-cover rounded-lg mb-4" />
+                        <img src="/images/gameplay_concept_base_1763660216922.png" alt="Base Building" className="w-full h-48 object-cover rounded-lg mb-4" />
                         <h3 className="text-2xl font-bold mb-2">Build & Survive</h3>
                         <p className="text-gray-400">Construct shelters and defend your resources.</p>
                     </div>
@@ -33,7 +33,7 @@ const Home = () => {
             <div id="ai-story" className="py-20 bg-slate-grey/30">
                 <div className="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
                     <div className="flex-1">
-                        <img src="/images/ai_matrix_code.png" alt="AI Code" className="rounded-2xl shadow-2xl border border-neon-cyan/20" />
+                        <img src="/images/ai_matrix_code_1763660227330.png" alt="AI Code" className="rounded-2xl shadow-2xl border border-neon-cyan/20" />
                     </div>
                     <div className="flex-1">
                         <span className="text-neon-cyan font-mono text-sm tracking-widest mb-2 block">BEHIND THE SCENES</span>
