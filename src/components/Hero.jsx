@@ -8,14 +8,15 @@ const Hero = () => {
             {/* Video Background */}
             <div className="absolute inset-0 z-0">
                 <div className="absolute inset-0 bg-gradient-to-b from-void-black/60 via-transparent to-void-black z-10" />
+                <div className="absolute inset-0 bg-black/40 z-0" /> {/* Dark overlay for readability */}
                 <video
                     autoPlay
                     loop
                     muted
                     playsInline
-                    className="w-full h-full object-cover opacity-60"
+                    className="w-full h-full object-cover"
                 >
-                    <source src="/videos/hero.mp4" type="video/mp4" />
+                    <source src="/assets/videos/hero.mp4" type="video/mp4" />
                 </video>
             </div>
 

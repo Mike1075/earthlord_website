@@ -30,6 +30,39 @@ const Home = () => {
                 </div>
             </div>
 
+            {/* Media Gallery Section */}
+            <div className="py-20 bg-void-black relative overflow-hidden">
+                <div className="absolute inset-0 bg-neon-cyan/5 blur-3xl" />
+                <div className="container mx-auto px-6 relative z-10">
+                    <div className="text-center mb-12">
+                        <span className="text-neon-cyan font-mono text-sm tracking-widest mb-2 block">VISUAL ARCHIVES</span>
+                        <h2 className="text-4xl font-bold text-white">Concept Art & World Building</h2>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        {[
+                            '/assets/images/3925a373-36ac-4625-a370-d8a873f1d9eb.png',
+                            '/assets/images/5bfefe36-4ec5-4c6b-9110-49992d78ffc4.png',
+                            '/assets/images/8bd11319-1070-4bf2-aa12-1ad55bd140c7.png',
+                            '/assets/images/8ce18115-ec22-48e4-9ff7-0b395d1046dd.png',
+                            '/assets/images/d33c8d61-f4d1-4691-9283-32bed0cdaf89.png',
+                            '/assets/images/d78c7378-89fc-44cb-b928-221641cbddce.png'
+                        ].map((src, index) => (
+                            <div key={index} className="group relative aspect-video overflow-hidden rounded-xl border border-white/10 hover:border-neon-cyan/50 transition-all duration-300">
+                                <img
+                                    src={src}
+                                    alt={`Concept Art ${index + 1}`}
+                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                                    <span className="text-white font-mono text-xs tracking-wider">IMG_REF_{1000 + index}</span>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </div>
+
             <div id="ai-story" className="py-20 bg-slate-grey/30">
                 <div className="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
                     <div className="flex-1">
