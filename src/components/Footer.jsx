@@ -7,31 +7,21 @@ const Footer = () => {
         <footer className="bg-black border-t border-white/10 py-12">
             <div className="container mx-auto px-6">
                 <div className="flex flex-col md:flex-row justify-between items-center mb-8">
-                    <div className="flex items-center gap-2 mb-4 md:mb-0">
-                        <Globe className="text-neon-cyan" />
-                        <span className="text-white font-bold text-xl">EARTH<span className="text-neon-cyan">LORD</span></span>
-                    </div>
-                    <div className="flex gap-6">
-                        <a href="#" className="text-gray-400 hover:text-white transition-colors"><Twitter /></a>
-                        <a href="mailto:onestnet@gmail.com" className="text-gray-400 hover:text-white transition-colors"><Mail /></a>
-                    </div>
-                </div>
-
-                <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
-                    <div className="mb-4 md:mb-0">
-                        &copy; {new Date().getFullYear()} AiXue AI. All rights reserved.
-                    </div>
-                    <div className="flex gap-6">
-                        <Link to="/privacy" className="hover:text-neon-cyan transition-colors">Privacy Policy</Link>
-                        <Link to="/terms" className="hover:text-neon-cyan transition-colors">Terms of Service</Link>
-                        <Link to="/age-rating" className="hover:text-neon-cyan transition-colors">Age Rating</Link>
-                        <Link to="/monetization-policy" className="hover:text-neon-cyan transition-colors">Monetization</Link>
-                        <Link to="/app-store-checklist" className="hover:text-neon-cyan transition-colors">App Store Checklist</Link>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    );
+                    <footer className="bg-void-black border-t border-white/10 py-12">
+                        <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+                            <div className="text-gray-400 text-sm">
+                                {t('footer.rights')}
+                            </div>
+                            <div className="flex gap-6 text-sm text-gray-400">
+                                <Link to="/privacy" className="hover:text-neon-cyan transition-colors">{t('footer.privacy')}</Link>
+                                <Link to="/terms" className="hover:text-neon-cyan transition-colors">{t('footer.terms')}</Link>
+                                <Link to="/age-rating" className="hover:text-neon-cyan transition-colors">{t('footer.ageRating')}</Link>
+                                <Link to="/monetization-policy" className="hover:text-neon-cyan transition-colors">{t('footer.monetization')}</Link>
+                                <Link to="/app-store-checklist" className="hover:text-neon-cyan transition-colors">{t('footer.appStoreChecklist')}</Link>
+                            </div>
+                        </div>
+                    </footer>
+                    );
 };
 
-export default Footer;
+                    export default Footer;

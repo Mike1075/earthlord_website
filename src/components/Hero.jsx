@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Apple } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const Hero = () => {
     const videos = [
@@ -15,6 +16,8 @@ const Hero = () => {
         }, 8000);
         return () => clearInterval(interval);
     }, []);
+
+    const { t } = useTranslation();
 
     return (
         <section className="relative h-screen w-full overflow-hidden flex items-center justify-center">
@@ -45,14 +48,14 @@ const Hero = () => {
                     transition={{ duration: 0.8 }}
                 >
                     <span className="inline-block py-1 px-3 rounded-full bg-neon-cyan/10 border border-neon-cyan/30 text-neon-cyan text-xs font-mono mb-6 tracking-widest">
-                        SYSTEM ONLINE // V1.0.0
+                        {t('hero.systemOnline')}
                     </span>
                     <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight leading-tight">
-                        RECLAIM THE <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-cyan to-blue-600">REAL WORLD</span>
+                        {t('hero.title1')} <br />
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-cyan to-blue-600">{t('hero.title2')}</span>
                     </h1>
                     <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-10 font-light">
-                        The first GPS survival game 100% developed by AI. Walk to claim territory, scavenge ruins, and rebuild civilization.
+                        {t('hero.subtitle')}
                     </p>
 
                     <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
@@ -61,14 +64,14 @@ const Hero = () => {
                             className="group relative px-8 py-4 bg-white text-black rounded-full font-bold text-lg flex items-center gap-3 overflow-hidden transition-all hover:scale-105"
                         >
                             <Apple className="w-6 h-6" />
-                            <span>App Store</span>
+                            <span>{t('hero.appStore')}</span>
                             <div className="absolute inset-0 bg-neon-cyan/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
                         </a>
                         <a
                             href="#features"
                             className="group px-8 py-4 bg-transparent border border-white/20 text-white rounded-full font-medium text-lg flex items-center gap-2 hover:bg-white/5 transition-all"
                         >
-                            <span>Explore Features</span>
+                            <span>{t('hero.exploreFeatures')}</span>
                             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                         </a>
                     </div>

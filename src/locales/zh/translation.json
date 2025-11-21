@@ -1,0 +1,46 @@
+{
+    "nav": {
+        "home": "首页",
+        "features": "游戏特色",
+        "aiStory": "AI 故事",
+        "privacy": "隐私政策"
+    },
+    "hero": {
+        "systemOnline": "系统在线 // V1.0.0",
+        "title1": "夺回",
+        "title2": "真实世界",
+        "subtitle": "首款 100% 由 AI 开发的 GPS 生存游戏。行走以占领领土，搜寻废墟，重建文明。",
+        "appStore": "App Store",
+        "exploreFeatures": "探索特色"
+    },
+    "features": {
+        "title": "游戏特色",
+        "realWorldTitle": "真实世界领土",
+        "realWorldDesc": "行走以占领土地。你的足迹定义你的帝国。",
+        "scavengeTitle": "搜寻废墟",
+        "scavengeDesc": "探索现实世界的兴趣点以寻找资源和战利品。",
+        "buildTitle": "建造与生存",
+        "buildDesc": "建造避难所并保卫你的资源。"
+    },
+    "gallery": {
+        "label": "视觉档案",
+        "title": "概念艺术与世界构建"
+    },
+    "aiStory": {
+        "label": "幕后花絮",
+        "title": "100% AI 开发",
+        "desc": "每一行代码，每一个机制，每一个逻辑像素都是由 Claude Code 生成的。一名开发者在短短 3 周内编写了 54,526 行代码。",
+        "devTimeLabel": "开发时间",
+        "devTimeValue": "3 周",
+        "locLabel": "代码行数",
+        "locValue": "5.4万+"
+    },
+    "footer": {
+        "rights": "© 2025 EarthLord. 保留所有权利。",
+        "privacy": "隐私政策",
+        "terms": "服务条款",
+        "ageRating": "年龄分级",
+        "monetization": "货币化政策",
+        "appStoreChecklist": "App Store 清单"
+    }
+}
