@@ -18,6 +18,8 @@ i18n
             },
         },
         fallbackLng: 'en',
+        supportedLngs: ['en', 'zh'],
+        nonExplicitSupportedLngs: true, // allows 'en-US' to match 'en'
         debug: true,
         interpolation: {
             escapeValue: false, // not needed for react as it escapes by default
