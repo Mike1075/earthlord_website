@@ -1,23 +1,40 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Apple } from 'lucide-react';
 
 const Hero = () => {
+    const videos = [
+        '/videos/hero.mp4',
+        '/assets/videos/hero.mp4'
+    ];
+    const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentVideoIndex((prev) => (prev + 1) % videos.length);
+        }, 8000);
+        return () => clearInterval(interval);
+    }, []);
+
     return (
         <section className="relative h-screen w-full overflow-hidden flex items-center justify-center">
             {/* Video Background */}
             <div className="absolute inset-0 z-0">
                 <div className="absolute inset-0 bg-gradient-to-b from-void-black/60 via-transparent to-void-black z-10" />
                 <div className="absolute inset-0 bg-black/40 z-0" /> {/* Dark overlay for readability */}
-                <video
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    className="w-full h-full object-cover"
-                >
-                    <source src="/assets/videos/hero.mp4" type="video/mp4" />
-                </video>
+                {videos.map((src, index) => (
+                    <video
+                        key={src}
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${index === currentVideoIndex ? 'opacity-100' : 'opacity-0'
+                            }`}
+                    >
+                        <source src={src} type="video/mp4" />
+                    </video>
+                ))}
             </div>
 
             {/* Content */}
