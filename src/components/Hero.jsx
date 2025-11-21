@@ -5,7 +5,6 @@ import { useTranslation } from 'react-i18next';
 
 const Hero = () => {
     const videos = [
-        '/videos/hero.mp4',
         '/assets/videos/hero.mp4'
     ];
     const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
