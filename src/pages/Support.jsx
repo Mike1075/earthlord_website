@@ -32,7 +32,7 @@ const Support = () => {
                             {isZh ? '1. 游戏无法启动或闪退' : '1. App Won\'t Launch or Crashes'}
                         </h3>
                         <ul className="list-disc pl-6 text-gray-400 space-y-2">
-                            <li>{isZh ? '请确保您的设备运行 iOS 15.0 或更高版本' : 'Please ensure your device is running iOS 15.0 or later'}</li>
+                            <li>{isZh ? '请确保您的设备运行 iOS 17.0 或更高版本' : 'Please ensure your device is running iOS 17.0 or later'}</li>
                             <li>{isZh ? '尝试重新启动设备后再打开游戏' : 'Try restarting your device and reopening the game'}</li>
                             <li>{isZh ? '检查设备存储空间是否充足' : 'Check if your device has sufficient storage space'}</li>
                             <li>{isZh ? '如问题持续，请尝试删除并重新安装应用' : 'If the problem persists, try deleting and reinstalling the app'}</li>
