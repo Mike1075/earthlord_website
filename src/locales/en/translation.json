@@ -3,7 +3,9 @@
         "home": "Home",
         "features": "Features",
         "aiStory": "AI Story",
-        "privacy": "Privacy Policy"
+        "privacy": "Privacy Policy",
+        "guide": "Game Guide",
+        "support": "Support"
     },
     "hero": {
         "systemOnline": "SYSTEM ONLINE // V1.0.0",
@@ -35,12 +37,23 @@
         "locLabel": "Lines of Code",
         "locValue": "54k+"
     },
+    "help": {
+        "label": "RESOURCES",
+        "title": "Help & Support",
+        "guideTitle": "Game Guide",
+        "guideDesc": "Complete guide covering exploration, territory claiming, building, trading and more gameplay mechanics.",
+        "supportTitle": "Technical Support",
+        "supportDesc": "Having trouble? Check our FAQ for common issues or contact our support team for help.",
+        "readMore": "Learn More"
+    },
     "footer": {
         "rights": "© 2025 EarthLord. All rights reserved.",
         "privacy": "Privacy Policy",
         "terms": "Terms of Service",
         "ageRating": "Age Rating",
         "monetization": "Monetization",
-        "appStoreChecklist": "App Store Checklist"
+        "appStoreChecklist": "App Store Checklist",
+        "guide": "Game Guide",
+        "support": "Support"
     }
 }

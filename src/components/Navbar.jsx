@@ -29,8 +29,11 @@ const Navbar = () => {
                         <a href="#ai-story" className="text-sm font-medium text-gray-300 hover:text-neon-cyan transition-colors">
                             {t('nav.aiStory')}
                         </a>
-                        <Link to="/privacy" className="text-sm font-medium text-gray-300 hover:text-neon-cyan transition-colors">
-                            {t('nav.privacy')}
+                        <Link to="/guide" className="text-sm font-medium text-gray-300 hover:text-neon-cyan transition-colors">
+                            {t('nav.guide')}
+                        </Link>
+                        <Link to="/support" className="text-sm font-medium text-gray-300 hover:text-neon-cyan transition-colors">
+                            {t('nav.support')}
                         </Link>
                         <LanguageSwitcher />
                     </div>
@@ -56,8 +59,11 @@ const Navbar = () => {
                         <a href="#ai-story" className="text-gray-300 hover:text-neon-cyan" onClick={() => setIsOpen(false)}>
                             {t('nav.aiStory')}
                         </a>
-                        <Link to="/privacy" className="text-gray-300 hover:text-neon-cyan" onClick={() => setIsOpen(false)}>
-                            {t('nav.privacy')}
+                        <Link to="/guide" className="text-gray-300 hover:text-neon-cyan" onClick={() => setIsOpen(false)}>
+                            {t('nav.guide')}
+                        </Link>
+                        <Link to="/support" className="text-gray-300 hover:text-neon-cyan" onClick={() => setIsOpen(false)}>
+                            {t('nav.support')}
                         </Link>
                         <div className="pt-2 border-t border-white/10">
                             <LanguageSwitcher />

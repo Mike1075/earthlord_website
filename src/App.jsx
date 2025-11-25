@@ -6,6 +6,8 @@ import TermsOfService from './pages/TermsOfService';
 import AgeRating from './pages/AgeRating';
 import AppStoreChecklist from './pages/AppStoreChecklist';
 import MonetizationPolicy from './pages/MonetizationPolicy';
+import Support from './pages/Support';
+import GameGuide from './pages/GameGuide';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Route path="/age-rating" element={<AgeRating />} />
         <Route path="/app-store-checklist" element={<AppStoreChecklist />} />
         <Route path="/monetization-policy" element={<MonetizationPolicy />} />
+        <Route path="/support" element={<Support />} />
+        <Route path="/guide" element={<GameGuide />} />
       </Routes>
     </Router>
   );

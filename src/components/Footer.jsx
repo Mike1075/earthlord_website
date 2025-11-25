@@ -11,7 +11,9 @@ const Footer = () => {
                 <div className="text-gray-400 text-sm">
                     {t('footer.rights')}
                 </div>
-                <div className="flex gap-6 text-sm text-gray-400">
+                <div className="flex flex-wrap gap-4 md:gap-6 text-sm text-gray-400">
+                    <Link to="/guide" className="hover:text-neon-cyan transition-colors">{t('footer.guide')}</Link>
+                    <Link to="/support" className="hover:text-neon-cyan transition-colors">{t('footer.support')}</Link>
                     <Link to="/privacy" className="hover:text-neon-cyan transition-colors">{t('footer.privacy')}</Link>
                     <Link to="/terms" className="hover:text-neon-cyan transition-colors">{t('footer.terms')}</Link>
                     <Link to="/age-rating" className="hover:text-neon-cyan transition-colors">{t('footer.ageRating')}</Link>

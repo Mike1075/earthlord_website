@@ -1,6 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
+import Footer from '../components/Footer';
 import { useTranslation } from 'react-i18next';
 
 const Home = () => {
@@ -90,6 +92,34 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+
+            {/* Help & Resources Section */}
+            <div className="py-20 bg-void-black">
+                <div className="container mx-auto px-6">
+                    <div className="text-center mb-12">
+                        <span className="text-neon-cyan font-mono text-sm tracking-widest mb-2 block">{t('help.label')}</span>
+                        <h2 className="text-4xl font-bold text-white">{t('help.title')}</h2>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                        <Link to="/guide" className="group bg-slate-grey p-8 rounded-2xl border border-white/10 hover:border-neon-cyan/50 transition-all duration-300 hover:transform hover:-translate-y-2">
+                            <div className="text-5xl mb-4">📖</div>
+                            <h3 className="text-2xl font-bold mb-3 group-hover:text-neon-cyan transition-colors">{t('help.guideTitle')}</h3>
+                            <p className="text-gray-400 mb-4">{t('help.guideDesc')}</p>
+                            <span className="text-neon-cyan font-mono text-sm">{t('help.readMore')} →</span>
+                        </Link>
+
+                        <Link to="/support" className="group bg-slate-grey p-8 rounded-2xl border border-white/10 hover:border-neon-cyan/50 transition-all duration-300 hover:transform hover:-translate-y-2">
+                            <div className="text-5xl mb-4">🛠️</div>
+                            <h3 className="text-2xl font-bold mb-3 group-hover:text-neon-cyan transition-colors">{t('help.supportTitle')}</h3>
+                            <p className="text-gray-400 mb-4">{t('help.supportDesc')}</p>
+                            <span className="text-neon-cyan font-mono text-sm">{t('help.readMore')} →</span>
+                        </Link>
+                    </div>
+                </div>
+            </div>
+
+            <Footer />
         </div>
     );
 };

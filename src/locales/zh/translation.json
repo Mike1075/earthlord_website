@@ -3,7 +3,9 @@
         "home": "首页",
         "features": "游戏特色",
         "aiStory": "AI 故事",
-        "privacy": "隐私政策"
+        "privacy": "隐私政策",
+        "guide": "游戏指南",
+        "support": "技术支持"
     },
     "hero": {
         "systemOnline": "系统在线 // V1.0.0",
@@ -35,12 +37,23 @@
         "locLabel": "代码行数",
         "locValue": "5.4万+"
     },
+    "help": {
+        "label": "帮助资源",
+        "title": "帮助与支持",
+        "guideTitle": "游戏指南",
+        "guideDesc": "完整的游戏攻略，涵盖探索、圈地、建造、交易等全部玩法详解。",
+        "supportTitle": "技术支持",
+        "supportDesc": "遇到问题？查看常见问题解答或联系我们的支持团队获取帮助。",
+        "readMore": "了解更多"
+    },
     "footer": {
         "rights": "© 2025 EarthLord. 保留所有权利。",
         "privacy": "隐私政策",
         "terms": "服务条款",
         "ageRating": "年龄分级",
         "monetization": "货币化政策",
-        "appStoreChecklist": "App Store 清单"
+        "appStoreChecklist": "App Store 清单",
+        "guide": "游戏指南",
+        "support": "技术支持"
     }
 }
